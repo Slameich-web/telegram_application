@@ -11,7 +11,7 @@ export const Header = () => {
       <Button onClick={onClose}>Закрыть</Button>
       Привет!
       <span className={"username"}>
-        <strong>{user.username}</strong>
+        <strong>{user?.username}</strong>
       </span>
       <h1>Добро пожаловать в мое портфолио</h1>
       <div>
