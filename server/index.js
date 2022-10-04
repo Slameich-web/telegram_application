@@ -3,7 +3,7 @@ import Bot from 'node-telegram-bot-api'
 dotenv.config()
 
 const bot = new Bot(process.env.TOKEN, { polling: true })
-const url = 'https://ya.ru'
+const url = 'https://funny-kleicha-8671e1.netlify.app/'
 bot.on('message', async (message) => {
     const chatId = message.chat.id
     const text = message.text
