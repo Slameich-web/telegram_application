@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useTelegram } from "../../hooks/useTelegram";
 import { Button } from "../button/Button";
+import { Main } from "../main";
 import "./Header.css";
 export const Header = () => {
   const { onClose, user } = useTelegram();
@@ -22,7 +23,7 @@ export const Header = () => {
         Также здесь вы сможете узнать над какими коммерческими задачами я
         работал <Button onClick={() => setState("prod")}>Закрыть</Button>
       </div>
-      {state === "pet" ? <div>Пет проекты</div> : null}
+      <Main activeArticle={state} />
     </div>
   );
 };
