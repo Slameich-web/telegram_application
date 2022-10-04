@@ -11,24 +11,27 @@ export const Header = () => {
     <div className="header">
       <span className="username">
         Привет
-        <strong>` ${user?.username}`</strong>
+        <strong>{user?.username}</strong>
       </span>
       <h2>Список и описание моих работ</h2>
       <div>
-        <Button onClick={() => setActiveArticle("pet")}>
-          Список pet-проектов
-        </Button>
+        <div className="button_wrapper">
+          <Button onClick={() => setActiveArticle("pet")}>
+            Список pet-проектов
+          </Button>
+        </div>
+        <div className="button_wrapper">
+          <Button onClick={() => setActiveArticle("prod")}>
+            Список prod-проектов
+          </Button>
+        </div>
+        <div className="button_wrapper">
+          <Button onClick={() => setActiveArticle("chart")}>
+            Диаграмма навыков
+          </Button>
+        </div>
       </div>
-      <div>
-        <Button onClick={() => setActiveArticle("prod")}>
-          Список prod-проектов
-        </Button>
-      </div>
-      <div>
-        <Button onClick={() => setActiveArticle("chart")}>
-          Диаграмма навыков
-        </Button>
-      </div>
+
       <Main activeArticle={activeArticle} />
     </div>
   );

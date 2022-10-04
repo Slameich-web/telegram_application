@@ -9,3 +9,6 @@
 .username {
   font-size: 22px;
 }
+.button_wrapper {
+  margin: 0 10px 5px 10px;
+}
