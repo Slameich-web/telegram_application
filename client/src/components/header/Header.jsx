@@ -5,26 +5,31 @@ import { Button } from "../button/Button";
 import { Main } from "../main";
 import "./Header.css";
 export const Header = () => {
-  const { onClose, user } = useTelegram();
-  const [state, setState] = useState("");
+  const { user } = useTelegram();
+  const [activeArticle, setActiveArticle] = useState("");
   return (
     <div className="header">
-      <Button onClick={onClose}>Закрыть</Button>
       <span className="username">
         Привет
         <strong>` ${user?.username}`</strong>
       </span>
       <h2>Список и описание моих работ</h2>
       <div>
-        <Button onClick={() => setState("pet")}>Список pet-проектов</Button>
+        <Button onClick={() => setActiveArticle("pet")}>
+          Список pet-проектов
+        </Button>
       </div>
       <div>
-        <Button onClick={() => setState("prod")}>Список prod-проектов</Button>
+        <Button onClick={() => setActiveArticle("prod")}>
+          Список prod-проектов
+        </Button>
       </div>
       <div>
-        <Button onClick={() => setState("chart")}>Диаграмма навыков</Button>
+        <Button onClick={() => setActiveArticle("chart")}>
+          Диаграмма навыков
+        </Button>
       </div>
-      <Main activeArticle={state} />
+      <Main activeArticle={activeArticle} />
     </div>
   );
 };
