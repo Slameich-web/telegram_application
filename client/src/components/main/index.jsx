@@ -6,6 +6,9 @@ export const Main = ({ activeArticle }) => {
     if (activeArticle === "prod") {
       return <div>Рабочие проекты</div>;
     }
+    if (activeArticle === "chart") {
+      return <div>Графики</div>;
+    }
   };
 
   return <div>{validateArticle(activeArticle)}</div>;

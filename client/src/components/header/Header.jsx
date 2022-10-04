@@ -10,18 +10,19 @@ export const Header = () => {
   return (
     <div className="header">
       <Button onClick={onClose}>Закрыть</Button>
-      Привет!
       <span className="username">
-        <strong>{user?.username}</strong>
+        Привет
+        <strong>` ${user?.username}`</strong>
       </span>
-      <h1>Добро пожаловать в мое портфолио</h1>
+      <h2>Список и описание моих работ</h2>
       <div>
-        Тут вы сможете найти описание моих пет проектов и ссылки на них{" "}
-        <Button onClick={() => setState("pet")}>Закрыть</Button>
+        <Button onClick={() => setState("pet")}>Список pet-проектов</Button>
       </div>
       <div>
-        Также здесь вы сможете узнать над какими коммерческими задачами я
-        работал <Button onClick={() => setState("prod")}>Закрыть</Button>
+        <Button onClick={() => setState("prod")}>Список prod-проектов</Button>
+      </div>
+      <div>
+        <Button onClick={() => setState("chart")}>Диаграмма навыков</Button>
       </div>
       <Main activeArticle={state} />
     </div>
