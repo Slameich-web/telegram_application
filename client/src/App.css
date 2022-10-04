@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.App {
   background: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
 }

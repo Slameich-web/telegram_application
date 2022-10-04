@@ -8,10 +8,10 @@ export const Header = () => {
   const { onClose, user } = useTelegram();
   const [state, setState] = useState("");
   return (
-    <div className={"header"}>
+    <div className="header">
       <Button onClick={onClose}>Закрыть</Button>
       Привет!
-      <span className={"username"}>
+      <span className="username">
         <strong>{user?.username}</strong>
       </span>
       <h1>Добро пожаловать в мое портфолио</h1>
