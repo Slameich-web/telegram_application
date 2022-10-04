@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import './App.css';
 import { Header } from './components/header/Header';
-export const TG = window.Telegram.WebApp;
+import { useTelegram } from './hooks/useTelegram';
 function App() {
+    const { TG } = useTelegram()
     useEffect(() => {
         TG.ready();
     }, [])
