@@ -6,7 +6,7 @@ function App() {
     const { TG } = useTelegram()
     useEffect(() => {
         TG.ready();
-    }, [])
+    }, [TG])
     return (
         <div className="App">
             <Header />
