@@ -14,7 +14,7 @@ export const Header = () => {
         <strong>{user?.username}</strong>
       </span>
       <h2>Список и описание моих работ</h2>
-      <div>
+      <div className="button_container">
         <div className="button_wrapper">
           <Button onClick={() => setActiveArticle("pet")}>
             Список pet-проектов
