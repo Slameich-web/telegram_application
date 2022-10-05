@@ -3,10 +3,10 @@ import React from "react";
 export const ProjectTemplate = ({ props }) => {
   console.log(props);
   return (
-    <div className="main_container_wrapper">
+    <div className="main_container">
       {props.map((project) => {
         return (
-          <div className="main_container">
+          <div className="main_container_wrapper">
             <h3>{project.title}</h3>
             <div>
               <div>{project.description}</div>
