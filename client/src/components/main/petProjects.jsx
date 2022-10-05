@@ -11,3 +11,4 @@ export const PetProjects = () => {
     </div>
   );
 };
+export default PetProjects;

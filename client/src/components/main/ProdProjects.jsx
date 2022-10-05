@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProdProjects = () => {
+const ProdProjects = () => {
   return (
     <div>
       <h3>MTS BANK Portal</h3>
@@ -8,3 +8,4 @@ export const ProdProjects = () => {
     </div>
   );
 };
+export default ProdProjects;

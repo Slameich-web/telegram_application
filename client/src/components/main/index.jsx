@@ -1,14 +1,22 @@
 import React from "react";
-import { PetProjects } from "./PetProjects";
-import { ProdProjects } from "./ProdProjects";
+import PetProjects from "./petProjects";
+import ProdProjects from "./ProdProjects";
 
 export const Main = ({ activeArticle }) => {
   const validateArticle = (activeArticle) => {
     if (activeArticle === "pet") {
-      return <PetProjects />;
+      return (
+        <div>
+          <PetProjects />
+        </div>
+      );
     }
     if (activeArticle === "prod") {
-      return <ProdProjects />;
+      return (
+        <div>
+          <ProdProjects />
+        </div>
+      );
     }
   };
 
