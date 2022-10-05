@@ -1,13 +1,13 @@
+import { PetProjects } from "./PetProjects";
+import { ProdProjects } from "./ProdProjects";
+
 export const Main = ({ activeArticle }) => {
   const validateArticle = (activeArticle) => {
     if (activeArticle === "pet") {
-      return <div>Пет проекты</div>;
+      return <PetProjects />;
     }
     if (activeArticle === "prod") {
-      return <div>Рабочие проекты</div>;
-    }
-    if (activeArticle === "chart") {
-      return <div>Графики</div>;
+      return <ProdProjects />;
     }
   };
 

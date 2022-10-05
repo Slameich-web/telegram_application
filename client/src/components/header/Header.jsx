@@ -10,8 +10,7 @@ export const Header = () => {
   return (
     <div className="header">
       <span className="username">
-        Привет
-        <strong>{user?.username}</strong>
+        Привет <strong>{user?.username}</strong>
       </span>
       <h2>Список и описание моих работ</h2>
       <div className="button_container">
@@ -23,11 +22,6 @@ export const Header = () => {
         <div className="button_wrapper">
           <Button onClick={() => setActiveArticle("prod")}>
             Список prod-проектов
-          </Button>
-        </div>
-        <div className="button_wrapper">
-          <Button onClick={() => setActiveArticle("chart")}>
-            Диаграмма навыков
           </Button>
         </div>
       </div>
