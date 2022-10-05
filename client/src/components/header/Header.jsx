@@ -12,17 +12,13 @@ export const Header = () => {
       <span className="username">
         Привет <strong>{user?.username}</strong>
       </span>
-      <h2>Список и описание моих работ</h2>
+      <h1>Список моих работ</h1>
       <div className="button_container">
         <div className="button_wrapper">
-          <Button onClick={() => setActiveArticle("pet")}>
-            Список pet-проектов
-          </Button>
+          <Button onClick={() => setActiveArticle("pet")}>Pet-проекты</Button>
         </div>
         <div className="button_wrapper">
-          <Button onClick={() => setActiveArticle("prod")}>
-            Список prod-проектов
-          </Button>
+          <Button onClick={() => setActiveArticle("prod")}>Prod-проекты</Button>
         </div>
       </div>
 

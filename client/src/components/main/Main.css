@@ -3,8 +3,13 @@
   flex-direction: column;
   padding-bottom: 8px;
   margin-bottom: 12px;
-  border-bottom: 1px solid gray;
 }
 .main_container div {
   text-align: left;
+}
+.main_container_wrapper {
+  border-bottom: 1px solid gray;
+}
+.main_container_progress {
+  margin-right: 8px;
 }

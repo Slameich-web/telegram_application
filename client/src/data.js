@@ -2,14 +2,14 @@ export const pet = [
     {
         title: "Ru linkedIn",
         description: "Социальная сеть для айтишников с упором на hard скилы",
-        state: 20,
+        state: 25,
         technologyFront: "React, Redux, TypeScript",
         technologyBack: "NestJS, Sequalize, PostgreSQL"
     },
     {
         title: "The Great World",
         description: "Сайт для игры которую я когда сделаю, надеюсь",
-        state: 20,
+        state: 40,
         technologyFront: "NextJS, TypeScript",
         technologyBack: ""
 
