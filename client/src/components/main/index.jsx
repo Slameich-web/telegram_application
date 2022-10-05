@@ -6,10 +6,10 @@ import ProjectTemplate from "./ProjectTemplate";
 export const Main = ({ activeArticle }) => {
   const validateArticle = (activeArticle) => {
     if (activeArticle === "pet") {
-      return <ProjectTemplate {...mts_bank_portal} />;
+      return <ProjectTemplate />;
     }
     if (activeArticle === "prod") {
-      return <ProjectTemplate {...ru_linkedIn} />;
+      return <ProjectTemplate />;
     }
   };
 

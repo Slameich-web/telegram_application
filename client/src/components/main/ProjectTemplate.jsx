@@ -1,19 +1,23 @@
 import React from "react";
 
-export const ProjectTemplate = ({
-  title,
-  description,
-  state,
-  technologyFront,
-  technologyBack,
-}) => {
+export const ProjectTemplate = (props) => {
   return (
     <div className="main_container">
-      <h3>{title}</h3>
-      <div>{description}</div>
-      <div>{state}</div>
-      <div>Frontend: {technologyFront}</div>
-      <div>Backend: {technologyBack}</div>
+      {props.map((project) => {
+        return (
+          <>
+            <h3>{project.title}</h3>
+            <div>{project.description}</div>
+            <div>
+              <progress value={project.state} max="100">
+                {project.state} %
+              </progress>
+            </div>
+            <div>Frontend: {project.technologyFront}</div>
+            <div>Backend: {project.technologyBack}</div>
+          </>
+        );
+      })}
     </div>
   );
 };

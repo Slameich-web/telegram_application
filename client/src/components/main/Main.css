@@ -6,3 +6,6 @@
   margin-bottom: 12px;
   border-bottom: 1px solid gray;
 }
+.main_container div {
+  text-align: left;
+}
