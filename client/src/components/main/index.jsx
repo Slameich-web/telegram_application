@@ -1,14 +1,15 @@
 import React from "react";
-import PetProjects from "./petProjects";
-import ProdProjects from "./ProdProjects";
+import { ru_linkedIn } from "../../data";
+
 import "./Main.css";
+import ProjectTemplate from "./ProjectTemplate";
 export const Main = ({ activeArticle }) => {
   const validateArticle = (activeArticle) => {
     if (activeArticle === "pet") {
-      return <PetProjects />;
+      return <ProjectTemplate />;
     }
     if (activeArticle === "prod") {
-      return <ProdProjects />;
+      return <ProjectTemplate {...ru_linkedIn} />;
     }
   };
 
