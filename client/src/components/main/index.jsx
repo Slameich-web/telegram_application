@@ -1,12 +1,12 @@
 import React from "react";
-import { ru_linkedIn } from "../../data";
+import { mts_bank_portal, ru_linkedIn } from "../../data";
 
 import "./Main.css";
 import ProjectTemplate from "./ProjectTemplate";
 export const Main = ({ activeArticle }) => {
   const validateArticle = (activeArticle) => {
     if (activeArticle === "pet") {
-      return <ProjectTemplate />;
+      return <ProjectTemplate {...mts_bank_portal} />;
     }
     if (activeArticle === "prod") {
       return <ProjectTemplate {...ru_linkedIn} />;

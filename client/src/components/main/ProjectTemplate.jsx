@@ -1,12 +1,19 @@
 import React from "react";
 
-export const ProjectTemplate = ({ title, description, state, technology }) => {
+export const ProjectTemplate = ({
+  title,
+  description,
+  state,
+  technologyFront,
+  technologyBack,
+}) => {
   return (
     <div className="main_container">
       <h3>{title}</h3>
       <div>{description}</div>
       <div>{state}</div>
-      <div>{technology}</div>
+      <div>Frontend: {technologyFront}</div>
+      <div>Backend: {technologyBack}</div>
     </div>
   );
 };
