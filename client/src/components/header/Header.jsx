@@ -6,7 +6,7 @@ import { Main } from "../main";
 import "./Header.css";
 export const Header = () => {
   const { user } = useTelegram();
-  const [activeArticle, setActiveArticle] = useState("");
+  const [activeArticle, setActiveArticle] = useState("pet");
   return (
     <div className="header">
       <span className="username">

@@ -25,7 +25,7 @@ export const pet = [
     },
     {
         title: "Technical Interview Bot",
-        link: "https://github.com/Slameich-web",
+        link: "https://github.com/Slameich-web/Technical_Interview_Bot",
         description: "Телеграм бот с списком вопросов к собеседованиям",
         state: 10,
         technologyFront: "React",
