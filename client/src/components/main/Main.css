@@ -8,12 +8,13 @@
   text-align: left;
 }
 .main_container_wrapper {
+  padding-bottom: 10px;
   border-bottom: 1px solid gray;
+  margin-bottom: 10px;
 }
 .main_container_progress {
   margin-right: 8px;
 }
 a {
   color: var(--tg-theme-text-color);
-  text-decoration: none;
 }
