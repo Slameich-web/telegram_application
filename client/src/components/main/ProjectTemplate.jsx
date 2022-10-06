@@ -7,7 +7,9 @@ export const ProjectTemplate = ({ props }) => {
         return (
           <div className="main_container_wrapper">
             <h3>
-              <a href={project.link}>{project.title}</a>
+              <a target="_blank" href={project.link} rel="noreferrer">
+                {project.title}
+              </a>
             </h3>
             <div>
               <div>{project.description}</div>
